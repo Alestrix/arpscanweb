@@ -6,11 +6,10 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
-        "@semantic-release/file",
-        {
-            "files": ["VERSION"],
-            "replace": "${nextRelease.version}"
-        }
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "echo ${nextRelease.version} > VERSION"
+      }
     ],
     [
       "@semantic-release/git",
