@@ -23,9 +23,8 @@ while [ "$1" != "" ]
 do
   if [ $INLOOP = 'true' ]; then
     echo -n ','
-  else
-    INLOOP=true
   fi
+  INLOOP=true
 
   COMMAND="$BASECOMMAND $1"
   if [ "$2" != "" ]; then
