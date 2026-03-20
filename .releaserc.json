@@ -28,7 +28,7 @@
       {"type": "chore", "section": "Chores"},
       {"type": "docs", "section": "Documentation"},
       {"type": "style", "hidden": true},
-      {"type": "refactor", "hidden": true},
+      {"type": "refactor", "section": "Refactoring"},
       {"type": "perf", "hidden": true},
       {"type": "test", "hidden": true}
     ]
