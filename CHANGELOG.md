@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/Alestrix/arpscanweb/compare/v0.1.2...v0.1.3) (2026-03-20)
+
+
+### Bug Fixes
+
+* **ci:** add token in renovate github action ([988eaa1](https://github.com/Alestrix/arpscanweb/commit/988eaa142884d13e35ee19defb9ddb3774ff986d))
+
 ## [0.1.2](https://github.com/Alestrix/arpscanweb/compare/v0.1.1...v0.1.2) (2026-03-20)
 
 ## [0.1.1](https://github.com/Alestrix/arpscanweb/compare/v0.1.0...v0.1.1) (2026-03-20)
