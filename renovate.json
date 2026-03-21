@@ -33,9 +33,9 @@
       "matchStrings": [
         "apk add --no-cache (?<depName>arp-scan)=?(?<currentValue>[^\\s]+)"
       ],
-      "depNameTemplate": "arp-scan",
-      "datasourceTemplate": "apk",
-      "versioningTemplate": "semver"
+      "datasourceTemplate": "repology",
+      "depNameTemplate": "alpine_edge/{{depName}}",
+      "versioningTemplate": "loose"
     }
   ]
 }
