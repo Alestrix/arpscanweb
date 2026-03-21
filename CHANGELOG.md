@@ -1,3 +1,9 @@
+## [0.1.16](https://github.com/Alestrix/arpscanweb/compare/v0.1.15...v0.1.16) (2026-03-21)
+
+### Chores
+
+* **deps:** update dependency alpine_edge/arp-scan to v1.10.0-r2 ([e1c12df](https://github.com/Alestrix/arpscanweb/commit/e1c12dff86e61cdfbe757de9afbc183467672d0c))
+
 ## [0.1.15](https://github.com/Alestrix/arpscanweb/compare/v0.1.14...v0.1.15) (2026-03-21)
 
 ### Chores
