@@ -2,8 +2,7 @@
   "branches": ["main"],
   "tagFormat": "v${version}",
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    ["@semantic-release/release-notes-generator", {
+    ["@semantic-release/commit-analyzer", {
       "preset": "angular",
       "presetConfig": {
         "types": [
@@ -12,7 +11,20 @@
           {"type": "chore", "section": "Chores"},
           {"type": "docs", "section": "Documentation"},
           {"type": "refactor", "section": "Refactoring"}
-      ]}}],
+        ]
+      }
+    }],
+    ["@semantic-release/release-notes-generator", {
+      "preset": "angular",
+      "presetConfig": {
+        "types": [
+          {"type": "feat", "section": "Features"},
+          {"type": "fix", "section": "Bug Fixes"},
+          {"type": "chore", "section": "Chores"},
+          {"type": "docs", "section": "Documentation"},
+          {"type": "refactor", "section": "Refactoring"}]
+      }}
+    ],
     "@semantic-release/changelog",
     ["@semantic-release/exec", {"prepareCmd": "echo ${nextRelease.version} > VERSION"}],
     ["@semantic-release/git", {
@@ -21,19 +33,6 @@
       }],
     "@semantic-release/github"
   ],
-  "preset": "angular",
-  "presetConfig": {
-    "types": [
-      {"type": "feat", "section": "Features"},
-      {"type": "fix", "section": "Bug Fixes"},
-      {"type": "chore", "section": "Chores"},
-      {"type": "docs", "section": "Documentation"},
-      {"type": "style", "hidden": true},
-      {"type": "refactor", "section": "Refactoring"},
-      {"type": "perf", "hidden": true},
-      {"type": "test", "hidden": true}
-    ]
-  },
   "releaseRules": [
     { "type": "fix", "release": "patch" },
     { "type": "chore", "release": "patch" },
