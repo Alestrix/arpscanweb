@@ -14,7 +14,6 @@
       "automerge": true
     },
     {
-      "matchManagers": ["dockerfile"],
       "matchPackageNames": ["arp-scan"],
       "groupName": "apk package updates",
       "enabled": true,
