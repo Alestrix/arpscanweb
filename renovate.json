@@ -1,5 +1,6 @@
 {
   "extends": ["config:recommended"],
+  "repositories": ["Alestrix/arpscanweb"],
   "enabledManagers": ["dockerfile"],
   "platformAutomerge": false,
   "packageRules": [
@@ -31,7 +32,7 @@
       "customType": "regex",
       "managerFilePatterns": ["/^Dockerfile$/"],
       "matchStrings": [
-        "apk add --no-cache\\s+(?<depName>arp-scan)(?:=(?<currentValue>[^\\s]+))?"
+        "apk add --no-cache (?<depName>arp-scan)=?(?<currentValue>[^\\s]+)"
       ],
       "depNameTemplate": "arp-scan",
       "datasourceTemplate": "apk",
