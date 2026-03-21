@@ -1,32 +1,60 @@
 {
   "branches": ["main"],
-  "preset": "conventionalcommits",
   "tagFormat": "v${version}",
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/exec",
-      { "prepareCmd": "echo ${nextRelease.version} > VERSION" }
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "angular",
+        "presetConfig": {
+          "types": [
+            { "type": "feat", "section": "Features" },
+            { "type": "fix", "section": "Bug Fixes" },
+            { "type": "chore", "section": "Chores" },
+            { "type": "docs", "section": "Documentation" },
+            { "type": "refactor", "section": "Refactoring" }
+          ]
+        },
+        "releaseRules": [
+          { "type": "fix", "release": "patch" },
+          { "type": "chore", "release": "patch" },
+          { "type": "docs", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "feat", "release": "minor" },
+          { "type": "break", "release": "major" },
+          { "scope": "deps", "release": "patch" }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "angular",
+        "presetConfig": {
+          "types": [
+            { "type": "feat", "section": "Features", "hidden": false },
+            { "type": "fix", "section": "Bug Fixes", "hidden": false },
+            { "type": "chore", "section": "Chores", "hidden": false },
+            { "type": "docs", "section": "Documentation", "hidden": false },
+            { "type": "refactor", "section": "Refactoring", "hidden": false }
+          ]
+        }
+      }
     ],
     "@semantic-release/changelog",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "echo ${nextRelease.version} > VERSION"
+      }
+    ],
     [
       "@semantic-release/git",
       {
         "assets": ["VERSION", "CHANGELOG.md"],
-        "message": "chore(release): ${nextRelease.version} [skip ci]"
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     "@semantic-release/github"
-  ],
-  "releaseRules": [
-    { "type": "fix", "release": "patch" },
-    { "type": "chore", "release": "patch" },
-    { "type": "docs", "release": "patch" },
-    { "type": "refactor", "release": "patch" },
-    { "type": "feat", "release": "minor" },
-    { "type": "break", "release": "major" },
-    { "scope": "deps", "release": "patch" },
-    { "scope": "ci", "release": "patch" }
   ]
 }
