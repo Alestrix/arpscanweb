@@ -1,3 +1,10 @@
+## [0.1.7](https://github.com/Alestrix/arpscanweb/compare/v0.1.6...v0.1.7) (2026-03-21)
+
+
+### Bug Fixes
+
+* **ci:** next attempt to fix CHANGELOG creation ([4972faf](https://github.com/Alestrix/arpscanweb/commit/4972faf68e3b2ddfb2b2291aa8a4037b96067306))
+
 ## [0.1.6](https://github.com/Alestrix/arpscanweb/compare/v0.1.5...v0.1.6) (2026-03-21)
 
 ## [0.1.5](https://github.com/Alestrix/arpscanweb/compare/v0.1.4...v0.1.5) (2026-03-21)
