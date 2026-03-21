@@ -1,3 +1,5 @@
+## [0.1.4](https://github.com/Alestrix/arpscanweb/compare/v0.1.3...v0.1.4) (2026-03-21)
+
 ## [0.1.3](https://github.com/Alestrix/arpscanweb/compare/v0.1.2...v0.1.3) (2026-03-20)
 
 
