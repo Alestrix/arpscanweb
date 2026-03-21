@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/Alestrix/arpscanweb/compare/v0.1.4...v0.1.5) (2026-03-21)
+
+
+### Bug Fixes
+
+* **ci:** next attempt to have chores show up in changelog ([b3695ea](https://github.com/Alestrix/arpscanweb/commit/b3695eaa6d9e465afc8c1d22baf6cf9376e93f60))
+
 ## [0.1.4](https://github.com/Alestrix/arpscanweb/compare/v0.1.3...v0.1.4) (2026-03-21)
 
 ## [0.1.3](https://github.com/Alestrix/arpscanweb/compare/v0.1.2...v0.1.3) (2026-03-20)
