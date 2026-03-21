@@ -2,6 +2,7 @@
   "extends": ["config:recommended"],
   "repositories": ["Alestrix/arpscanweb"],
   "enabledManagers": ["dockerfile"],
+  "platformAutomerge": false,
   "customManagers": [
     {
       "customType": "regex",
