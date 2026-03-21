@@ -27,9 +27,10 @@
   "semanticCommits": "enabled",
   "semanticCommitType": "chore",
   "semanticCommitScope": "deps",
-  "regexManagers": [ 
+  "customManagers": [
     {
-      "fileMatch": ["^Dockerfile$"],
+      "customType": "regex",
+      "managerFilePatterns": ["/^Dockerfile$/"],
       "matchStrings": [
         "apk add --no-cache (?<depName>arp-scan)(?:=(?<currentValue>[\\S]+))?"
       ],
