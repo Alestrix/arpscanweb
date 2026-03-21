@@ -1,3 +1,9 @@
+## [0.1.14](https://github.com/Alestrix/arpscanweb/compare/v0.1.13...v0.1.14) (2026-03-21)
+
+### Bug Fixes
+
+* **ci:** switch again to conventionalcommits, let's see ([cde41ea](https://github.com/Alestrix/arpscanweb/commit/cde41ead2a7da2f953ad3839ea0e78db8e236231))
+
 ## [0.1.13](https://github.com/Alestrix/arpscanweb/compare/v0.1.12...v0.1.13) (2026-03-21)
 
 ## [0.1.12](https://github.com/Alestrix/arpscanweb/compare/v0.1.11...v0.1.12) (2026-03-21)
