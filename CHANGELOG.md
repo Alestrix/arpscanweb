@@ -1,3 +1,9 @@
+## [0.1.10](https://github.com/Alestrix/arpscanweb/compare/v0.1.9...v0.1.10) (2026-03-21)
+
+### Bug Fixes
+
+* **ci:** updated package-lock.json after updating package.json ([22dc6be](https://github.com/Alestrix/arpscanweb/commit/22dc6be3b8a2f88202bb35eb31a62d5080658989))
+
 ## [0.1.9](https://github.com/Alestrix/arpscanweb/compare/v0.1.8...v0.1.9) (2026-03-21)
 
 ### Bug Fixes
