@@ -1,3 +1,10 @@
+## [0.1.12](https://github.com/Alestrix/arpscanweb/compare/v0.1.11...v0.1.12) (2026-03-21)
+
+
+### Bug Fixes
+
+* **ci:** yet another attempt of fixing semantic-release changelog creation ([09b400c](https://github.com/Alestrix/arpscanweb/commit/09b400cc2f97da3971d4f6b37148a8ffd2c34bbb))
+
 ## [0.1.11](https://github.com/Alestrix/arpscanweb/compare/v0.1.10...v0.1.11) (2026-03-21)
 
 ## [0.1.10](https://github.com/Alestrix/arpscanweb/compare/v0.1.9...v0.1.10) (2026-03-21)
