@@ -31,7 +31,7 @@
       "customType": "regex",
       "managerFilePatterns": ["/^Dockerfile$/"],
       "matchStrings": [
-        "apk add --no-cache (?<depName>arp-scan)=?(?<currentValue>[^\\s]+)"
+        "apk add --no-cache (?<depName>arp-scan)=(?<currentValue>[^\\s]+)$"
       ],
       "datasourceTemplate": "repology",
       "depNameTemplate": "alpine_edge/{{depName}}",
