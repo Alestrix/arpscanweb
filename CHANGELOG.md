@@ -1,3 +1,11 @@
+## [0.1.9](https://github.com/Alestrix/arpscanweb/compare/v0.1.8...v0.1.9) (2026-03-21)
+
+### Bug Fixes
+
+* **ci:** add conventional-changelog-conventionalcommitsnpm package ([5f5222d](https://github.com/Alestrix/arpscanweb/commit/5f5222dbdbab1a3ee6b85b6bb8b15dde01b67930))
+* **ci:** fix regression deleting changlog plugin from semantic-release ([8dd1f62](https://github.com/Alestrix/arpscanweb/commit/8dd1f62ee2fffc75ff26bb3adb428abb83e8de1b))
+* **ci:** yet another attempt ([d60e332](https://github.com/Alestrix/arpscanweb/commit/d60e332de6aa691a74961cc57a4469318bde6036))
+
 ## [0.1.8](https://github.com/Alestrix/arpscanweb/compare/v0.1.7...v0.1.8) (2026-03-21)
 
 ## [0.1.7](https://github.com/Alestrix/arpscanweb/compare/v0.1.6...v0.1.7) (2026-03-21)
