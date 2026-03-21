@@ -3,18 +3,6 @@
   "repositories": ["Alestrix/arpscanweb"],
   "enabledManagers": ["dockerfile"],
   "platformAutomerge": false,
-  "customManagers": [
-    {
-      "customType": "regex",
-      "managerFilePatterns": ["^Dockerfile$"],
-      "matchStrings": [
-        "apk add --no-cache (?<depName>arp-scan)(?:=(?<currentValue>[^\\s]+))?"
-      ],
-      "depNameTemplate": "$depName",
-      "datasourceTemplate": "apk",
-      "versioningTemplate": "semver"
-    }
-  ],
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],
@@ -26,7 +14,7 @@
       "automerge": true
     },
     {
-      "matchManagers": ["custom.regex"],
+      "matchManagers": ["dockerfile"],
       "matchPackageNames": ["arp-scan"],
       "groupName": "apk package updates",
       "enabled": true,
@@ -38,5 +26,16 @@
   "rangeStrategy": "pin",
   "semanticCommits": "enabled",
   "semanticCommitType": "chore",
-  "semanticCommitScope": "deps"
+  "semanticCommitScope": "deps",
+  "regexManagers": [ 
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": [
+        "apk add --no-cache (?<depName>arp-scan)(?:=(?<currentValue>[\\S]+))?"
+      ],
+      "depNameTemplate": "arp-scan",
+      "datasourceTemplate": "apk",
+      "versioningTemplate": "semver"
+    }
+  ]
 }
