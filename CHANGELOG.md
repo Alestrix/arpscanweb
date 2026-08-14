@@ -1,3 +1,9 @@
+## [0.1.17](https://github.com/Alestrix/arpscanweb/compare/v0.1.16...v0.1.17) (2026-08-14)
+
+### Chores
+
+* **deps:** update nginx docker tag to v1.29.7 ([48b13da](https://github.com/Alestrix/arpscanweb/commit/48b13daff5a6cf03646602057463c15c03ffc7c6))
+
 ## [0.1.16](https://github.com/Alestrix/arpscanweb/compare/v0.1.15...v0.1.16) (2026-03-21)
 
 ### Chores
